@@ -48,5 +48,3 @@ let weather = {
         weather.search();
       }
     });
-  
-  weather.fetchWeather("Denver");
