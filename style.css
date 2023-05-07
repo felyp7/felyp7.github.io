@@ -94,7 +94,7 @@ button {
     border: none;
     position: absolute;
     top: 20%;
-    left: 20%;
+    left: 10%;
     padding: 20px 50px;
     font-size: 30px;
     font-weight: bold
@@ -105,7 +105,18 @@ button2 {
     border: none;
     position: absolute;
     top: 20%;
-    left: 65%;
+    left: 70%;
+    padding: 20px 50px;
+    font-size: 30px;
+    font-weight: bold
+}
+
+button3 {
+    background-color: bisque;
+    border: none;
+    position: absolute;
+    top: 20%;
+    left: 45%;
     padding: 20px 50px;
     font-size: 30px;
     font-weight: bold
