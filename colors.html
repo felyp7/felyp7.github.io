@@ -2,56 +2,69 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Random Background Color</title>
     <style>
         body {
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-            font-size: 5em;
-            color: white;
-        }
-
-        #hex-code {
+            background-color: #000000;
             font-family: Arial, sans-serif;
-            font-size: 0.5em;
-            color: #fff;
-            font-weight: bold;
-            text-transform: uppercase;
+            color: #ffffff;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
-        #message {
-            font-size: 0.2em;
-            color: #999;
+        #color-square {
+            background-color: #191818;
+            padding: 15px;
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            display: inline-flex;
+            vertical-align: middle;
+            align-items: center;
+        }
+
+        #color-square p {
+            font-size: 14px;
+            margin: 0 0 0 10px;
+            color: #ffffff;
+        }
+
+        #color-code {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 10px 0;
         }
     </style>
-</head>
-
-<body>
-    <div id="color-info">
-        <div id="hex-code"></div>
-        <div id="message">Press space for new color</div>
-    </div>
     <script>
-        function getRandomColor() {
-            const color = '#' + Math.floor(Math.random() * 16777215).toString(16).toUpperCase();
-            document.body.style.backgroundColor = color;
-            document.querySelector('#hex-code').textContent = color;
+        function setRandomBackgroundColor() {
+            var color = Math.floor(Math.random() * 16777215).toString(16);
+            document.body.style.backgroundColor = "#" + color;
+            document.getElementById("color-code").innerHTML = "#" + color.toUpperCase();
+            document.getElementById("color-square").style.color = "#" + color;
+            document.getElementById("color-square").style.backgroundColor = "#191818";
+            document.getElementById("color-square").querySelector("p").style.color = "#" + color;
+            var now = new Date();
+            var timestamp = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+            document.getElementById("timestamp").innerHTML = "[" + timestamp + "]";
         }
-
-        getRandomColor();
-
-        document.body.addEventListener('keydown', function (event) {
-            if (event.code === 'Space') {
-                getRandomColor();
+        document.addEventListener("keydown", function (event) {
+            if (event.code === "Space") {
+                setRandomBackgroundColor();
             }
         });
     </script>
+</head>
+
+<body>
+    <div id="color-square"><span id="timestamp" style="color: #86857f;">[12:59:49]</span>
+        <p style="font-size: 14px; margin-left: 10px; color: #191818;">FELYP8: xD test123 lol</p>
+    </div>
+    <p id="color-code"></p>
+    <p>Press space for new color</p>
 </body>
 
 </html>
