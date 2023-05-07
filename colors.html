@@ -23,14 +23,14 @@
             font-weight: bold;
             color: #ffffff;
             display: inline-flex;
-            vertical-align: middle;
             align-items: center;
         }
 
         #color-square p {
-            font-size: 14px;
+            font-size: 12px;
             margin: 0 0 0 10px;
             color: #ffffff;
+            font-weight: bold;
         }
 
         #color-code {
@@ -56,12 +56,13 @@
                 setRandomBackgroundColor();
             }
         });
+        window.addEventListener("load", setRandomBackgroundColor); // add this line
     </script>
 </head>
 
 <body>
     <div id="color-square"><span id="timestamp" style="color: #86857f;">[12:59:49]</span>
-        <p style="font-size: 14px; margin-left: 10px; color: #191818;">FELYP8: xD test123 lol</p>
+        <p>FELYP8: xD test123 lol</p>
     </div>
     <p id="color-code"></p>
     <p>Press space for new color</p>
