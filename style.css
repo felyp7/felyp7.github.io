@@ -193,3 +193,7 @@ body {
 .link-container {
     text-align: center;
 }
+.name {
+    text-align: center;
+    margin-top: 0px;
+}
