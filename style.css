@@ -91,14 +91,13 @@ img {
 
 button {
     margin: 150px;
-    background-color: bisque;
     border: none;
     position: relative;
     top: 20%;
-    left: 10%;
-    padding: 20px 50px;
+    left: 4%;
+    padding: 20px
     font-size: 30px;
-    font-weight: bold
+    font-weight: bold;
 }
 
 
