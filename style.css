@@ -200,3 +200,14 @@ body {
     text-align: center;
     margin-top: 0px;
 }
+
+a > img {
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+a > img:hover {
+    max-height: 300px;
+    width: auto;
+}
