@@ -90,6 +90,7 @@ img {
 }
 
 button {
+    margin:200px;
     background-color: bisque;
     border: none;
     position: relative;
@@ -100,27 +101,6 @@ button {
     font-weight: bold
 }
 
-button2 {
-    background-color: bisque;
-    border: none;
-    position: relative;
-    top: 20%;
-    left: 70%;
-    padding: 20px 50px;
-    font-size: 30px;
-    font-weight: bold
-}
-
-button3 {
-    background-color: relative;
-    border: none;
-    position: absolute;
-    top: 20%;
-    left: 45%;
-    padding: 20px 50px;
-    font-size: 30px;
-    font-weight: bold
-}
 
 .buttonDisabled {
     Cursor: text !important;
