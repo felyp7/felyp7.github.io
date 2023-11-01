@@ -91,7 +91,8 @@ img {
 
 button {
     margin: 150px;
-    border-radius: 5px solid #ffffff;
+    border-radius: 10px;
+    border: 5px solid whitesmoke;
     position: relative;
     top: 20%;
     left: 3%;
