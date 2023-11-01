@@ -91,10 +91,10 @@ img {
 
 button {
     margin: 150px;
-    border: none;
+    border-radius: 5px solid #ffffff;
     position: relative;
     top: 20%;
-    left: 2.5%;
+    left: 3%;
     right: 2.5%;
     padding: 20px 50px;
     font-size: 30px;
