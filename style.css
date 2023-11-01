@@ -95,14 +95,14 @@ button {
     border: 5px solid whitesmoke;
     position: relative;
     top: 20%;
-    left: 3%;
+    left: 2.5%;
     right: 2.5%;
     padding: 20px 50px;
     font-size: 30px;
     font-weight: bold;
 }
 button:hover {
-    background-color:#eeeeef;
+    background-color:#d6d6d7;
 }
 
 .buttonDisabled {
