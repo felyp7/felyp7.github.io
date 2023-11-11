@@ -100,15 +100,31 @@ button {
     padding: 20px 50px;
     font-size: 30px;
     font-weight: bold;
-}
-button:hover {
-    background-color:#a7a7a7;
-}
+    transition: all 0.1s ease-in-out;
+    overflow: hidden; /* Ensure the overflow is hidden to hide the image initially */
+  }
 
-.buttonDisabled {
-    Cursor: text !important;
-    Text-Decoration: None !important;
-}
+  button:hover {
+    background-color: #a7a7a7;
+    border: 7px solid whitesmoke;
+    border-radius: 25px;
+    transform: scale(1.2);
+  }
+
+  button img {
+    margin-left: 40%;
+    width: 23%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 100%; /* Initially position the image below the button */
+    left: 0;
+    transition: top 0.3s ease-in-out;
+  }
+
+  button:hover img {
+    top: 55%; /* Move the image to the top on hover */
+  }
 
 body {
     min-height: 100%;
