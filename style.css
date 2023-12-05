@@ -89,17 +89,18 @@ img {
     margin: auto;
 }
 
+
 button {
+    width: 300px;
+    padding: 10px;
     margin: 150px;
     border-radius: 10px;
     border: 5px solid whitesmoke;
     position: relative;
-    display:flex;
-    align-items:center;
     font-size: 30px;
     font-weight: bold;
     transition: all 0.1s ease-in-out;
-    overflow: hidden; /* Ensure the overflow is hidden to hide the image initially */
+    overflow: hidden; 
   }
 
   button:hover {
@@ -115,13 +116,13 @@ button {
     height: auto;
     display: block;
     position: absolute;
-    top: 100%; /* Initially position the image below the button */
+    top: 100%; 
     left: 0;
     transition: top 0.3s ease-in-out;
   }
 
   button:hover img {
-    top: 55%; /* Move the image to the top on hover */
+    top: 55%;
   }
 
 body {
@@ -215,6 +216,12 @@ body {
     margin-top: 0px;
 }
 
+.center {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 a > img {
     margin: 30px;
     border-radius: 10px;
@@ -224,4 +231,16 @@ a > img {
 a > img:hover {
     max-height: 300px;
     width: auto;
+}
+
+@media screen and (max-width: 1500px) {
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    button {
+        margin: 60px;
+    }
 }
